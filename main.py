@@ -54,8 +54,8 @@ def sendDanmu(text,roomid): # 发送弹幕
         'fontsize': '25',
         'rnd': '{}'.format(ti),                             # 发送时间
         'roomid': roomid,                                   # 直播id
-        'csrf': 'bfecb7122afbaa70259e8b8623c23226',         #你的浏览器的 csrf
-        'csrf_token': 'bfecb7122afbaa70259e8b8623c23226'    ##你的浏览器的 csrf_token
+        'csrf': '',                                         #你的浏览器的 csrf
+        'csrf_token': ''                                    #你的浏览器的 csrf_token
     }
     print(requests.post(url=url, headers=headers, data=data))
 
